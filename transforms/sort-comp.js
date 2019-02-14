@@ -104,9 +104,9 @@ module.exports = function(fileInfo, api, options) {
 
 // Hard-coded for Airbnb style
 const defaultMethodsOrder = [
-  'static-methods',
   'displayName',
   'propTypes',
+  'static-methods',
   'contextTypes',
   'childContextTypes',
   'mixins',
@@ -117,18 +117,23 @@ const defaultMethodsOrder = [
   'state',
   'getInitialState',
   'getChildContext',
+  'getDerivedStateFromProps',
   'componentWillMount',
+  'UNSAFE_componentWillMount',
   'componentDidMount',
   'componentWillReceiveProps',
+  'UNSAFE_componentWillReceiveProps',
   'shouldComponentUpdate',
   'componentWillUpdate',
+  'UNSAFE_componentWillUpdate',
+  'getSnapshotBeforeUpdate',
   'componentDidUpdate',
+  'componentDidCatch',
+  'getDerivedStateFromError',
   'componentWillUnmount',
-  '/^on.+$/',
-  '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
   'everything-else',
   '/^render.+$/',
-  'render',
+  'render'
 ];
 
 // FROM https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/sort-comp.js
