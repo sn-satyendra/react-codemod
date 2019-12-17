@@ -1,3 +1,8 @@
+## Forked
+
+This is the forked version of react-codemod and provides following additional features:
+- Support for sorting the deprecated and UNSAFE_ prefixed methods with the sort codemod
+
 ## react-codemod [![Build Status](https://travis-ci.org/reactjs/react-codemod.svg)](https://travis-ci.org/reactjs/react-codemod)
 
 This repository contains a collection of codemod scripts for use with
